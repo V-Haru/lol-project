@@ -1,0 +1,83 @@
+.btn-if-ctr {
+  position: relative;
+  height: 160px;
+  width: 800px;
+}
+
+.btn-if {
+  color: var(--txt-color-4);
+  position: absolute;
+  text-transform: uppercase;
+  background-color: var(--btn-color-5);
+  height: 160px;
+  width: 800px;
+  border: none;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: var(--font-1), var(--font-1-opc);
+  z-index: -1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-if-ctr:hover > .btn-if {
+  color: var(--txt-color-4-hover);
+  background-color: var(--btn-color-5-hover);
+}
+
+.btn-if-sel {
+  color: var(--txt-color-5);
+  background: rgba(35, 112, 112, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(35, 112, 112, 1) 0%,
+    rgba(17, 66, 66, 0.96) 49%,
+    rgba(23, 38, 38, 0.92) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(35, 112, 112, 1) 0%,
+    rgba(17, 66, 66, 0.96) 49%,
+    rgba(23, 38, 38, 0.92) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#237070', endColorstr='#172626', GradientType=1 );
+  transition: all 0.3s ease;
+}
+
+.btn-if-ctr:hover > .btn-if::before,
+.btn-if-sel::before {
+  content: "";
+  width: 110px;
+  height: 110px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 27px;
+  left: -54px;
+  animation: animate 0.3s linear;
+}
+
+.btn-if::before {
+  background-color: var(--triangule-1-1);
+  box-shadow: 0px 0px 10px 15px var(--triangule-1-2);
+}
+
+.btn-if-sel::before {
+  background-color: var(--triangule-2-1);
+  box-shadow: 6px 0px 10px 15px var(--triangule-2-2);
+  transition: all 0.4s ease;
+}
+
+.btn-if-ctr:hover > .btn-if-sel::before {
+  background-color: var(--triangule-3-1);
+  box-shadow: 6px 0px 10px 15px var(--triangule-3-2);
+}
+
+@keyframes animate {
+  0% {
+    left: -160px;
+  }
+
+  100% {
+    left: -54px;
+  }
+}
