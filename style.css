@@ -1,0 +1,59 @@
+:root {
+  --btn-color-1: #d0a85c;
+  --btn-color-2: #0bc6e3;
+  --btn-color-3: #c39031;
+  --btn-color-4: #c1c1c1;
+  --btn-color-5: #193e3d;
+  --btn-color-5-hover: #162727;
+
+  --txt-color-1: #0338eb;
+  --txt-color-2: #fff;
+  --txt-color-3: #010101;
+  --txt-color-4: #458e7f;
+  --txt-color-4-hover: #7ee9c2;
+  --txt-color-5: #b4f4dd;
+
+  --bg-color-1: #fff;
+  --bg-color-2: #142021;
+
+  --font-1: "Roboto";
+  --font-1-opc: sans-serif;
+  --font-2: "Krona One";
+
+  --triangule-1-1: #184a47;
+  --triangule-1-2: #173c3b;
+
+  --triangule-2-1: #259990;
+  --triangule-2-2: #1b5b58;
+
+  --triangule-3-1: #30c5b9;
+  --triangule-3-2: #1c7974;
+}
+
+* {
+  margin: auto;
+  padding: auto;
+}
+
+body {
+  padding-top: 25px;
+  background-color: #fff;
+  background: #272727;
+}
+
+.clearfix {
+  overflow: auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-color-1 {
+  background: var(--btn-color-1);
+}
+
+.btn-color-2 {
+  background: var(--btn-color-2);
+}
